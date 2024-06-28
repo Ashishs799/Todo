@@ -1,0 +1,97 @@
+* {
+  border-radius: 0 !important;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #4f27ab;
+  align-items: center;
+}
+
+.wrapper {
+  background: #19024e;
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem !important;
+  padding: 35px 25px;
+  z-index: 5;
+  position: relative;
+}
+/* .todo_form {
+} */
+
+.flex {
+  column-gap: 5px;
+}
+
+ul {
+  row-gap: 10px;
+}
+.todo-lists {
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+  background: #4f27ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 8px;
+}
+
+.todo-lists li {
+  background: transparent;
+  width: 100%;
+  list-style: none;
+  border: none;
+  color: #fff;
+}
+.btn {
+  background: #4f27ab !important;
+  border: none !important;
+  color: #ffff !important;
+  padding: 2px 0;
+  border-radius: 0 !important;
+  /* border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important; */
+}
+
+.input {
+  height: 35px;
+}
+
+.todo_form input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    background: #fff;
+  }
+  .wrapper {
+    position: absolute;
+    top: 0;
+    background: #fff;
+  }
+  .flex {
+    flex-direction: column-reverse !important;
+    /* background: red; */
+    column-gap: normal;
+    row-gap: 5px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .input {
+    width: 100% !important;
+  }
+  .input:hover {
+    background: red !important;
+  }
+}
